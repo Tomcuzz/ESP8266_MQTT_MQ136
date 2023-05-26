@@ -54,6 +54,7 @@ void loop() {
   i++;
   if (i>100) {
     client.publish(mqtt_hass_topic, hass_config);
+    i = 0;
   }
 
   float h = analogRead(A0);
