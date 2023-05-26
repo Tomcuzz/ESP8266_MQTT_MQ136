@@ -11,7 +11,7 @@ const char *mqtt_post_topic = "h2s_sensor/bathroom/value";
 const char *mqtt_hass_topic = "homeassistant/sensor/bathroom_h2s/config";
 const char *otp_pass = "otp_pass"; //OTP Password
 
-const char *hass_config = "{\"name\":\"bathroom_h2s\", \"unique_id\":\"bathroom_h2s\", \"device\":{\"identifiers\":[\"bathroom_h2s\"], \"manufacturer\":\"tcousin\", \"model\":\"Gass Sensor V1\", \"name\":\"bathroom_h2s\"}, \"availability\":{\"topic\":\"h2s_sensor/bathroom/status\", \"payload_available\":\"online\", \"payload_not_available\":\"offline\"}, \"icon\":\"mdi:scent\", \"state_topic\":\"h2s_sensor/bathroom/value\", \"device_class\":\"gas\"}";
+const char *hass_config = "{\"name\":\"bathroom_h2s\", \"unique_id\":\"bathroom_h2s\", \"device\":{\"identifiers\":[\"bathroom_h2s\"], \"manufacturer\":\"tcousin\", \"model\":\"Gass Sensor V1\", \"name\":\"bathroom_h2s\"}, \"availability\":{\"topic\":\"h2s_sensor/bathroom/status\", \"payload_available\":\"online\", \"payload_not_available\":\"offline\"}, \"icon\":\"mdi:scent\", \"state_topic\":\"h2s_sensor/bathroom/value\", \"device_class\":\"gas\", \"unit_of_measurement\":\"\"}";
 
 
 EspMQTTClient client(
